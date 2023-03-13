@@ -12,7 +12,234 @@
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
     </header>
     <main>
-      <!-- Student code goes here -->
+      <section class="card" id="html-section">
+        <h2>HTML</h2>
+        <ul>
+          <li>HTML stands for Hyper Text Markup Language.</li>
+          <li>HTML uses markup to describe and create the structure of web pages.</li>
+          <li>All HTML documents must start with a document type declaration. The HTML document type should look like the following: &lt;!DOCTYPE html&gt;.</li>
+          <ul style="list-style-type:square;">
+          <li>The &lt;!DOCTYPE&gt; declaration represents the document type, and helps browsers to display web pages correctly.</li>
+          <li>Must only appear once, at the top of the web page (before any HTML tags).</li>
+          <li>Also, it is not case-sensitve because it is a declaration. Declarations are not case-sensitive; HTML elements are case-sensistve.</li>
+          </ul>
+          <li>The structure of HTML is built up by elements and represented by tags.</li>
+</ul>
+          <h4>HTML Elements</h4>
+          <ul>
+          <li>HTML elements work together to build the structure of a webpage and provide a framework that makes it easy for a user to navigate the webpage.</li>
+          <li>Elements are a type of content on a webpage.</li>
+          <li>The following are types of elements that are commonly used to add content to web pages: Text elements, Image elements, Header elements, and List elements.</li>
+          <li>The &lt;head&gt; element contains information, or metadata, that helps the browser render the page correctly. Elements that are within the &lt;head&gt; are not visible when a user looks at a webpage.</li>
+          <ul style="list-style-type:square;">
+          <li>Metadata is data about our webpage that the browser uses to effectively serve our webpage to users. Metadata is typically not seen by users, but it contains important information about accessibility, search engines, and performance.</li>
+          </ul>
+          <li>The &lt;body&gt; element represents and contains the visible content shown to the user. All the elements that we want the user to and interact with must be place inside this element.</li>
+          <li>Inside the &lt;head&gt; element, we can use the following metadata tags:</li>
+          <ul style="list-style-type:square;">
+            <li>The &lt;title&gt; element specifies a title for a webpage. This element is required and is extemely important for Search Engine Optimization (SEO).</li>
+          <ul style="list-style-type: circle">
+          <li>Search engine optimization (SEO) is the process of improving the ranking of a website in search engines such as Google or Bing. Better SEO results in your website more frequently showing up in searches.</li>
+          </ul>  
+            <li>The &lt;style&gt; element defines the CSS styles associated with a website.</li>
+            <li>The &lt;base&gt; element defines the base URL for a webpage.</li>
+            <li>The &lt;link&gt; element connects an external resource to the HTML document.</li>
+            <li>The &lt;meta&gt; element defines metadata such as the character set, description, keywords, author, and viewpoint. Below, are some examples:</li>
+          <ul style="list-style-type: circle">
+            <li>&lt;meta charset="UTF-8" /&gt;. The &lt;meta&gt; element defines the charset, or character set, as UTF-8, which allows us to use most characters and symbols on the page.</li>
+            <li>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;. The http-equiv element sets an HTTP header for content.</li>
+            <li>&lt;meta name="vieport" content="width=device-width, initial-scale=1.0"&gt;. The viewport element sets the default view for our webpage.</li>
+          </ul>  
+            <li>The &lt;script&gt; element embeds client-side scripts in the HTML document.</li>
+            <li>The &lt;p&gt; element represents a paragraph or block of text.</li>
+          <ul style="list-style-type: circle">
+            <li>You'll use this element extensively to wrap most of your text on your webpages.</li>
+          </ul>
+
+          </ul>
+
+          <li>HTML elements can be nested (this means that elements can contain other documents) and all HTML consist of nested HTML elements. They are called child elements.</li>
+        <ul style="list-style-type:square;">
+          <li>If there are three elements nested inside of a &lt;body&gt; element, those three nested elements are known as child elements.</li>
+        </ul>
+          <li>The element that holds all the children-in the previous case, the &lt;body&gt; element-is known as the parent element.</li>
+          <li>The "parent/child" language is often used by developers to explain the relationship among elements in HTML.</li>
+          <li>Elements are also used to divide the content on the page and to describe the content to broswers and other developers.</li>
+          <li>Below, are some common element types that are used to divide and describe a page:</li> 
+        <ul style="list-style-type:square;">  
+          <li>Meta-related elements</li> 
+          <li>Content division elements</li>
+          <li>Semantic elements.</li> 
+          <ul style="list-style-type: circle">
+            <li>In semantic HTML elements, the name of the elements describes its content and the role it plays on a webpage.</li>
+            <li>When possible, it is important to use semantic HTML elements, because they make our HTML easier to read by other developers and the browser.</li>
+            <li>Semantic HTML also plays an important role in making sure your webpage is accessible to the widest variety of users, including those who use assistive technologies such as screen readers.</li> 
+          </ul>
+          <li>Not all elements are semantic, though. It is common to see non-semantic elements such as &lt;div&gt; to create a division in the page or &lt;span&gt; to create an inline division.</li>
+          </ul>
+        </ul>
+ <h4>HTML Tags</h4>
+          <ul>
+          <li>Tags label pieces of content; Heading, Paragraph, and Table.</li>
+          <li>Tags usually come in pairs: a start tag and the end tag.</li>
+          <li>A start tag begins a section of a web page. It should look like the following:</li>
+          <ul style="list-style-type:square">
+          <li>&lt;Tagname&gt;</li>
+          </ul>
+          <li>An end tag is writen just like the start tag but with a forward slash (/) inserted before the tag name. It should look like the following:</li>
+          <ul style="list-style-type:square">
+          <li>&lt;/Tagname&gt;</li>
+          </ul>
+          <li>Now, for how a start tag and end tag should look together; &lt;Starttag&gt;content goes here&lt;/Endtag&gt;</li>
+          <li>The &lt;html&gt; tag represents the root, or start element of any HTML document.</li>
+          <ul style="list-style-type:square;">
+          <li>You can put what is called an HTML attribute inside the &lt;html&gt; tag that defines additional information about an element and they are always defined in the beginning element, never the closing element.</li>
+          <li>For example; &lt;html lang="en"&gt;. Inside the &lt;html&gt; tag is an attribute of lang="en", which tells the browser the language for the webpage (in the example, en for English).</li>
+          </ul>
+          <li>The &lt;h1&gt; to &lt;h6&gt; tags are used to define HTML headings.</li>
+          <li>&lt;h1&gt; defines the most important heading. &lt;h6&gt; defines the least important heading.</li>
+          <li>Only use one &lt;h1&gt; per page and this should represent the main heading/subject for the whole page.</li>
+          <li>Also, do not skip heading levels - start with &lt;h1&gt;, then use &lt;h2&gt;, and so on.</li>
+
+
+        </ul>
+
+      </section>
+
+      <section class="card" id="css-section">
+        <h2>CSS</h2>
+        <ul>
+          <li>Enter your CSS notes here</li>
+        </ul>
+  
+      </section>
+
+      <section class="card" id="git-section">
+        <h2>Git</h2>
+        <ul>
+          <li>Git is a version control system that lets you manage and keep track of each version of your project.</li>
+          <li>Git is the most commonly used version control software among developers and a tool that you will likely use on the job.</li>
+          <ul style="list-style-type:square">
+          <li>Version control systems/softwares allows us to track and manage changes to our codebase. That way, if we need to make changes or even revert back to an earlier copy, we can do without losing other versions of our code.</li>
+          <li>Every time we save a version of our work using version control, it is assigned a unique identifier called an SHA, or hash, that allows us to keep a record of the specific changes committed.</li>
+          <ul style="list-style-type:circle">
+            <li>This unique identifier provides a reference to that specific version of code so we can retrieve it as needed.</li>
+            <li>An SHA, or hash, is actually a long string of numbers or letters, like this: "e0eaed45609ae40ada29664384e679ada5d5004a". However, when using the SHA to access a version of their code, developers often type out only the first seven numbers or letters. This gives just the right amount of information to allow the right version to be retrieved and eliminates the need to copy the entire SHA.</li>
+          </ul>
+        </ul>
+          <li>To access Git, we use the command line in terminal.</li>
+          <ul style="list-style-type:square">
+          <li>Git commands always start with git and are used to save and track versions of your code.</li>
+          <li>Using Git commands, we can initiate or create a repo (repository), add our code to the repo, and view the different versions of our code, which are each stored in a unique commit.</li>
+          </ul>
+          <li>git status: checks what branch we are currently on.</li>
+          <li>git checkout -b branch-name: creates a new branch and switches to it.</li>
+          </ul>
+        <h4>Git "Setup": Configuring user information used accross all local repositories</h4>
+          <ul>
+          <li>git config --global user.name "[firstname lastname]": sets a name that is identfiable for credit when review version history.</li>
+          <li>git config --global user.email "[valid-email]": sets an email address that will be associated with each history marker.</li>
+          <li>git config --global color.ui auto: sets automatic command line coloring for Git for easy reviewing.</li>
+          </ul>
+        <h4>Git "Setup and Init": Configuring user information, initializing and cloning repositories</h4>
+        <ul>
+          <li>git init: initializing an existing directory as a Git repository.</li>
+          <li>git clone [url]: retrieves an entire repository from hosted location via URL.</li>
+          </ul>
+      <h4>Git "Stage and Snapshot": Working with snapshots and the Git staging area</h4>
+        <ul>
+        <li>git add [file]: adds a file as it looks now to your next commit (stage).</li>
+        <li>git reset [file]: unstages a file while retaining the changes in working directory.</li>
+        <li>git diff: different of what is changed but not staged.</li>
+        <li>git diff --staged: different of what is staged but not yet committed.</li>
+        <li>git commit -m "[descriptive message]": commits your staged content as a new commit snapshot.</li>
+        </ul>
+      <h4>Git "Branch and Merge": Isolating work in branches, changing context, and integrating changes</h4>
+        <ul>
+        <li>git branch: lists your branches and a * will appear next to the currently active branch.</li>
+        <li>git branch [branch-name]: creates a new branch at the current commit.</li>
+        <li>git merge [branch]: merges the specified branch's history into the current one.</li>
+        <li>git log: shows all commits in the current branch's history.</li>
+        </ul>
+        <h4>Git "Inspect and Compare": Examining logs, diffs and object information</h4>
+          <ul>
+          <li>git log: shows the commit history for the currently active branch.</li>
+          <li>git log branchB..branchA: shows the commits on branchA that are not on branchB.</li>
+          <li>git show [SHA]: shows any object in Git in human-readable format.</li>
+          </ul>
+        <h4>Git "Tracking Path Changes": The versioning file removes and path changes</h4>
+          <ul>
+          <li>git rm [file]: deletes the file from project and stage the removal for commit.</li>
+          <li>git mv [existing-path] [new-path]: changes an existing file path and stage the move.</li>
+          <li>git log --stat -M: shows all commit logs with indication of any paths that moved.</li>
+          </ul>
+        <h4>Git Ignoring Patterns: Preventing unintentional staging or committing of files</h4>
+          <ul>
+          <style>
+          ul.no-bullets {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+          }
+          </style>
+          <li>logs/</li>
+          <ul class="no-bullets">
+            <li>*.notes  : saves a file with desired patterns as gitignore with either direct string matches or wildcard globs.</li>
+            <li>pattern*/</li>
+          </ul>
+          <li>git config --global core.excludesfile [file]: system wide ignores pattern for all local repositories.</li>
+          </ul>
+        </ul>
+        <h4>Git "Share and Update": Retrieving updates from another repository and updating local repos</h4>
+          <ul>
+          <li>git remote add [alias] [url]: adds a git URL as an alias.</li>
+          <li>git fetch [alias]: fetches down all the branches from that Git remote.</li>
+          <li>git merge [alias]/[branch]: merges a remote branch into your current branch to bring it up to date.</li>
+          <li>git push [alias] [branch]: transmits local branch commits to the remote repository branch.</li>
+          <li>git pull: fetches and merges any commits from the tracking remote branch.</li>
+          </ul>
+        <h4>Git "Rewrite History": Rewriting branches, updating commits and clearing history</h4>
+          <ul>
+          <li>git rebase [branch]: applies any commits of current branch ahead of the specified one.</li>
+          <li>git reset --hard [commit]: clears staging area, and rewrites the working tree from specified event.</li>
+          </ul>
+        <h4>Git "Temporary Commits": Temporarily stores modified, tracked files in order to change branches</h4>
+          <ul>
+          <li>git stash: saves modified and staged changes.</li>
+          <li>git stash list: lists stack-order of stashed file changes.</li>
+          <li>git stash pop: writes working from the top of stash stack.</li>
+          <li>git stash drop: discards the changes from the top of stash stack.</li>
+          </ul>
+        <h4>GitHub</h4>
+          <ul>
+          <li>Git is great for tracking changes locally on your own computer, but in order for you to be able to collaborate with others, you need to use another tool, GitHub.</li>
+          <li>GitHub is a web-based interface that uses Git, the open source version control software that lets multiple people make seperate changes to web pages at the same time.</li>
+          <li>With GitHub, developers can build code, track changes, and innovate solutions to problems that might arise during the site development process simultaneously.</li>  
+          </ul>
+        <h4>How to speak GitHub</h4>
+          <ul>
+          <li>Repository (repo)- a folder in which all files and their version histories are stored.</li>
+          <li>Branch- a workspace in which you can make changes that won't affect the live site.</li>
+          <li>Markdown (.md)- a way to write in Github that converts plain text to GitHub code. Sites such as Atom and Sublime Text are examples of free resources for developers using Markdown.</li>
+          <li>Commit Changes- a saved record of a change made to a file within the repo.</li>
+          <li>Pull Request (PR)- the way to ask for changes made to a branch to be merged into another branch that also allows for multiple users to see, discuss and review work being done.</li>
+          <li>Merge- after a pull request is approved, the commit will be pulled in (or merged) from one branch to another and then, deployed on the live site.</li>
+          <li>Issues- how work is tracked when using git. Issues allow users to report new tasks and content fixes, as well as allows users to track progress on a project board from the beginning to end of a specific project.</li>
+          <li>Federalists- a platform that securely deploys a website from a GitHub repository in minutes and lets users preview proposed and published changes.</li>
+          
+
+          </ul>  
+        </ul>
+
+      </section>
+
+      <section class="card" id="javascript-section">
+        <h2>JavaScript</h2>
+        <ul>
+          <li>Enter your JavaScript notes here</li>
+        </ul>
+
+      </section>
     </main>
 
     <footer>
