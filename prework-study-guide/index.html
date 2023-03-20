@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css"/>
     <title>Prework Study Guide</title>
   </head>
   <body>
@@ -25,7 +26,7 @@
           </ul>
           <li>The structure of HTML is built up by elements and represented by tags.</li>
 </ul>
-          <h4>HTML Elements</h4>
+          <h4>HTML Elements:</h4>
           <ul>
           <li>HTML elements work together to build the structure of a webpage and provide a framework that makes it easy for a user to navigate the webpage.</li>
           <li>Elements are a type of content on a webpage.</li>
@@ -78,7 +79,7 @@
           <li>Not all elements are semantic, though. It is common to see non-semantic elements such as &lt;div&gt; to create a division in the page or &lt;span&gt; to create an inline division.</li>
           </ul>
         </ul>
- <h4>HTML Tags</h4>
+ <h4>HTML Tags:</h4>
           <ul>
           <li>Tags label pieces of content; Heading, Paragraph, and Table.</li>
           <li>Tags usually come in pairs: a start tag and the end tag.</li>
@@ -109,8 +110,93 @@
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
-          <li>Enter your CSS notes here</li>
+          <li>CSS stands for Cascading Style Sheets.</li>
+          <li>CSS is used to add style to a webpage.</li>
+          <li>CSS is a programming language used by developers to define how webpage content is presented to users.</li>
+          <li>CSS defines color, aesthetics, visual layout, and orginization.</li>
+          <li>We use CSS to define style rules for specific elements of an HTML page and format them using a wide range of style options.</li>
+          <li>There are three ways to style a webpage using CSS:</li>  
+          <ol type="1">
+              <li>Inline CSS</li>
+              <li>Internal CSS Style Sheet</li>
+              <li>External CSS Style Sheet</li>
+            </ol>
+        </ul>    
+        <h4>Inline CSS:</h4>
+          <ul>
+          <li>Inline CSS is when a developer wants to style an element directly in the HTML file.</li>
+          <li>Inline styles apply to a specific HTML tag, using a style attribute with a CSS rule to style a particular page element only.</li>
+          <li>They are useful for quick and permenant changes but are less flexible than external and internal style sheets, because each inline style must be edited individually whenever you make a design change.</li>
+          <li>Example of Inline CSS is using the style attribute to change the color of a single h1 heading:</li>
+          <ul style="list-style-type: square;">
+          <li>&lt;h1 style="color:red;"&gt;Inline CSS Example&lt;/h1&gt;</li>
+          </ul>
         </ul>
+        <h4>Internal Style Sheet:</h4>
+          <ul>
+          <li>Internal Style Sheets contain CSS rules for the webpage in the head section of the HTML file.</li>
+          <ul style="list-style-type: square;">
+          <li>The rules only apply to that page, and you can configure CSS classes and ID's, which are used to identify elements, to style multiple elements in the page code.</li>
+          <li>A single change to the CSS rule will apply to all tagged page elements.</li>
+        </ul>
+          </ul>
+          <ul>
+          <li>The following code shows what an Internal CSS Style Sheet should look along the lines like:</li>
+        <ul style="list-style-type: none;">
+          <li>&lt;head&gt;</li>
+        <li>&lt;style&gt;</li>
+        <ul>h1 {</ul>
+        <ul>color:red;</ul>
+        <ul>}</ul>
+        <li>&lt;/style&gt;</li>
+        <li>&lt;/head&gt;</li>
+          </ul>
+          <ul style="list-style-type: square;">
+          <li>The preceding CSS states that all &lt;h1&gt; elements on the webpage will be red.</li>
+          </ul>
+          <li>Inline CSS and Internal Style Sheets are totally acceptable methods under certain conditions, but the most common way to style a webpage is by using an External CSS Style Sheet.</li>
+          </ul>
+        <h4>External CSS Style Sheet:</h4>
+          <ul>
+          <li>External CSS Style Sheets are preferred in most cases because it allows developers to keep all their CSS rules in a seperate file, which makes design changes easier.</li>
+          <li>When using an External Style Sheet, we link the file using a &lt;link&gt; element placed in the HTML's &lt;head&gt;, as shown in the following code:</li>
+          <ul style="list-style-type: none;">
+          <li>&lt;head&gt;</li>
+            <ul>&lt;link rel="stylesheet" href="./assets/style.css"/&gt;</ul>
+          <li>&lt;/head&gt;</li>
+          </ul>
+          </ul>
+        <h4>CSS Rule:</h4>
+          <ul style="list-style-type: none;">
+          <li>div {color: blue; text-align: justify;}</li>
+          </ul>
+          <ul>
+          <li>div is the selector.</li>
+          <li>color: and text-align: are the properties.</li>
+          <li>blue; and justify; are the values.</li>
+          <li>{color: blue; and text-align: justify;} are the declarations.</li>
+          <li>{color: blue; text-align: justify;} is the declaration block.</li>
+          <li>Declarations contain two important components: the CSS property we want to apply and the value of the property.</li>
+          <li>A margin indicates how much space we want around the outside of an element.</li>
+          <li>A padding indicates how much space we want around the content inside an element.</li>
+          <li>Example:</li>
+          <ul style="list-style-type: none;">
+          <li>.card {</li>
+            <ul>width: 80%;</ul>
+            <ul>margin: 40px auto;</ul>
+            <ul>border: 5px solid gray;</ul>
+            <ul>box-shadow: 5px 10px #888888;</ul>
+          <li>}</li>
+          </ul>
+          <ul style="list-style-type: square;">
+          <li>The period preceding card designates this as a class selector. Any HTML element assigned to the class, card, will gain these property assignments from the CSS.</li>
+          <li>The first declaration addresses the width of the element at 80% of the available width.</li>
+          <li>The margin property assigns 40px to the top and bottom, and the auto value to the left and right.</li>
+          <li>The border property assigns a border with a width of 5px that is solid and gray.</li>
+          <li>The box-shadow CSS property adds shadow effects around an elements frame.</li>
+          </ul>
+          </ul>
+      </ul> 
   
       </section>
 
