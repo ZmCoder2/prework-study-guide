@@ -323,9 +323,120 @@
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
-          <li>A variable is a named container that allows us to store data in our code.</li>
-          <li>Control flow is the order in which a computer executes code in a script.</li>
+          <li>JavaScript is a programming language that allows users to interact with websites.</li>
+          <li>With JavaScript, you will be able to add effects, interactivity, data communication, and more.</li>
+          <li>JavaScript is the tool that takes a static HTML/CSS webpage interactive.</li>
+          <li>Things such as click a button, retrieve data, or fill out a form is when JavaScript is at work.</li>
+          <li>JavaScript is case sensitive. Which means myVariable is not the same as myvariable.</li>
+          <li>Note, that each line of JavaScript code ends with a semicolon.</li>
         </ul>
+        <h4>Variable</h4>
+        <ul>  
+          <li>A variable is a named container that allows us to store data in our code.</li>
+          <li>In JavaScript, to declare a variable, we use the var keyword in our code. After the var keyword, we give the variable a unique name because it is how you will reference the information stored in the variable in your code.</li>
+          <li>For example:</li>
+        <ul style="list-style-type: square;">
+          <li>var myVariable;</li>
+        </ul>
+          <li>After declaring a variable, you can give it value.</li>
+          <li>For example:</li>
+        <ul style="list-style-type: square;">
+          <li>myVariable="car";</li>
+        </ul>
+          <li>In the examples above the container is called "myVariable" that stores a "car".</li>
+          <li>Note, you can do both of the operations (declaring and giving it value) on the same line.</li>
+          <li>For example:</li>
+        <ul style="list-style-type: square;">
+          <li>var myVariable="cars";</li>
+        </ul>
+          <li>We use an assignment operator = to assign the specific data that we want stored in our variable.</li>
+        </ul>
+        <h4>String</h4>
+        <ul>
+          <li>A String in JavaScript is one of the primitive values and the String object is a wrapper around a String primitive.</li>
+          <li>To signify that the value is a String, enclose it in single or double quote marks.</li>
+          <li>For example:</li>
+        <ul style="list-style-type: square;">
+          <li>var myVariable='car'; or var myVariable="car";</li>
+        </ul>
+          <li>In your file that has your JavaScript code you can create a variable multiple strings within your code.</li>
+          <li>For example:</li>
+        <ul style="list-style-type: square;">
+          <li>var topics="HTML, CSS, Git, JavaScript";</li>
+        </ul>
+        <li>In the example above we have created a variable called, topics.</li>
+        <li>The topics variable contains a String that includes all of the topics for the example.</li>
+        <li>In order to access the String "HTML, CSS, Git, JavaScript", we will need to refer to the variables name, topics.</li>
+        <li>For example in your file that contains the JavaScript code, type the following:</li>
+      <ul style="list-style-type: square;">
+        <li>console.log(topics);</li>
+      </ul>
+        <li>We can use the console.log method to output a message to the web console by adding an argument. In this case, console.log will output the value of topics to the web console because we have added it as an argument inside the parentheses.</li>
+        <li>Remember to always save after you have added something to a file or your code.</li>
+        </ul>
+      <h4>Control Flow</h4>  
+        <ul>
+          <li>Control flow is the order in which a computer executes code in a script.</li>
+          <li>Control flow can be interrupted, however you can use conditional statements and loops to control the oder in which code is executed, or if it is even executed at all. You will need to reverse engineer your code to set up a conditional statement that will let you alter the control flow so the code executes only if a certain condition is met.</li>
+          <li>One way to create conditional statements is by using an "if" statement.</li>
+        <ul style="list-style-type: square;">
+          <li>An "if" statement is a way of introducing decision-making into your code.</li>
+          <li>When using an "if" statement, code will only execute if the statment meets a condition, or it is true.</li>
+        </ul>
+          <li>To create an "if" statement in JavaScript, you will enter the following code:</li>
+        <ul style="list-style-type: none;">
+          <li>if (condition) {</li>
+          <li>// block code to be executed if condition is truthy</li>
+          <li>}</li>  
+        </ul>
+          <li>When the computer encounters an "if" statement in a JavaScript file, it will the check to see if the condition you have provided is truthy. If it is, then it will do whatever action you have asked it to do in between the curly brackets. If the condition is not true or has a value that is not truthy, then the computer will just ignore whatever you have in between the curly brackets and move on.</li>
+        </ul>
+      <h4>Array</h4>
+      <ul>
+          <li>An Array is a single variable that is used to hold a group of data.</li>
+          <li>Arrays are typically used to hold data that is related in some way.</li>
+          <li>To create an Array, you declare a variable in the same way as you did when you declared a variable with only one data item. However, instead of assigning tthe variable to a single value, you assign the variable to a group of values.</li>
+          <li>For example:</li>
+        <ul style="list-style-type: square;">
+          <li>var topics=["HTML", "CSS", "Git", "JavaScript"];</li>
+        </ul>
+          <li>To work with individual data items inside an Array, you need to have one more piece of information: the location of the data item in the Array. The location is identified with a unique number called an index.</li>
+          <li>By using each piece of data's index, or location number, you can access individual data inside the Array. In JavaScript and other programming languages, Arrays are zero-indexed and sequential which means that the first item in any kind of Array has an index of 0, not 1.</li>
+          <li>From the example above, if you wanted to access the HTML topic you would enter the following into your JavaScript file at the bottom of your code.</li>
+        <ul style="list-style-type: square;">
+          <li>console.log(topics[0]);</li>
+        </ul> 
+      </ul>
+        <h4>Loop</h4>
+      <ul>
+          <li>Instead of writing each code manually for an Array, the most efficient and easier way is to use loops.</li>
+          <li>There are many types of loops but for this instense you will use a "for loop".</li>
+          <li>A "for loop" uses the predictable pattern of indices to perform a task on all the items in an Array by allowing a single code block to be executed over and over.</li>
+          <li>A "for loop" contains three important statements:</li>
+        <ul style="list-style-type: square;">
+          <li>The first statement determine the starting point for your loop.</li>
+          <ul style="list-style-type: circle;">
+            <li>var x=0;</li>
+            <li>Since you want to start at the begining of an Array, you declare a variable x and give it a value of 0.</li>
+          </ul>
+          <li>The second statement is the condition.</li>
+        <ul style="list-style-type: circle;">
+          <li>x < topics.length;</li>
+          <li>As long as the number in the variable x is less than the length of the array, the loop will keep running and it will allow the loop to execute one time for each item in the Array. You used the "length" built-in Array property to your topics Array to express that condition.</li>
+        </ul>
+         <li>The final statement is what allows the Array to iterate over each item.</li>
+        <ul style="list-style-type: circle;">
+         <li>x++</li>
+         <li>The code x++ is a shortcut way of writing x+1. Now every time the code loops, x will increase by 1.</li>
+        </ul>    
+        </ul>
+        <li>The "for loop" always starts with "for" and with all the statements put together it should look like the following:</li>
+        <ul style="list-style-type: none;">
+         <li>for(var x=0; x < topics.length; x++) {</li>
+         <li>// code block</li>
+         <li>}</li> 
+        </ul>  
+      </ul>
 
       </section>
     </main>
